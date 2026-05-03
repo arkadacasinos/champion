@@ -74,7 +74,7 @@ export const metadata: Metadata = {
     shortcut: ["/icon"],
   },
     verification: {
-    yandex: "530204a472afcc08", 
+    yandex: "d29adc767114405a", 
   },
   manifest: "/manifest.webmanifest",
   generator: "v0.app",
