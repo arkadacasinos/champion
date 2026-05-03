@@ -73,6 +73,9 @@ export const metadata: Metadata = {
     apple: [{ url: "/apple-icon", type: "image/png", sizes: "180x180" }],
     shortcut: ["/icon"],
   },
+    verification: {
+    yandex: "530204a472afcc08", 
+  },
   manifest: "/manifest.webmanifest",
   generator: "v0.app",
 }
