@@ -98,10 +98,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru" className={`${inter.variable} ${sora.variable} bg-background dark`}>
-      <body className="font-sans antialiased bg-background text-foreground">
-        {children}
-        {process.env.NODE_ENV === "production" && <Analytics />}
-                        <script
+    <head>
+       <script
           dangerouslySetInnerHTML={{
             __html: `
               (function() {
@@ -114,6 +112,10 @@ export default function RootLayout({
             `,
           }}
         />
+      </head> 
+      <body className="font-sans antialiased bg-background text-foreground">
+        {children}
+        <Analytics />
       </body>
     </html>
   )
